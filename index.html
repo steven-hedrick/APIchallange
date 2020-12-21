@@ -31,6 +31,7 @@
     </div>    
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src=".js"></script>
 <script>
 
 
@@ -39,9 +40,9 @@
 
 
     function init(){
-        var url = "https://api.covid19api.com/summary"
+        let url = "https://api.covid19api.com/summary"
 
-        var data = ''
+        let data = ''
 
         $.get(url,function(data){
             console.log(data.Global)
